@@ -1,0 +1,287 @@
+/* Section header */
+html {
+    scroll-behavior: smooth;
+}
+
+#hero {
+    background-color: #03476E;
+    color: white;
+    padding: 150px 0;
+}
+
+#apropos {
+    background-color: #03476E;
+    color: white;
+    padding: 150px 0;
+}
+
+#hero h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#hero h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    margin-left: 0;
+    padding-left: 0;
+
+}
+
+#apropos h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    text-align: left;
+    margin-left: 0;
+    padding-left: 0;
+    position: relative;
+    top: 30px;
+}
+
+#apropos p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-left: 0;
+    padding-left: 0;
+    position: relative;
+    top: 30px;
+}
+
+#hero img {
+    max-width: 100%;
+    height: auto;
+    float: right;
+    /* Pousse l'image à droite */
+    margin-left: 10px;
+    /* Ajoute un espace à gauche, si besoin */
+}
+
+#about {
+    padding: 80px 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+    margin-left: 0;
+    padding-left: 0;
+    color: #03476E;
+}
+
+h4 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+    margin-left: 0;
+    padding-left: 0;
+    color: #ffffff;
+
+}
+
+.btn-service {
+    background-color: #f6b42e;
+    color: #03476E;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    position: relative;
+    top: 50px;
+    border-radius: 100px;
+    padding: 13px 20px;
+    border: 2px solid #ffffff;
+}
+
+.btn-contact {
+    background-color: white;
+    color: #03476E;
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: relative;
+    top: 50px;
+    border-radius: 100px;
+    padding: 13px 23px;
+    border: 2px solid #ffffff;
+    margin: 0 15px;
+}
+
+
+#services img {
+    max-width: 100%;
+    height: auto;
+}
+
+.img-fluid {
+    margin-top: 20px;
+}
+
+/* Appliquer la police Raleway au h1 */
+h1 {
+    font-family: 'Raleway', sans-serif;
+
+}
+
+/* Appliquer la police Poppins Medium aux paragraphes */
+p,
+li {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    /* Medium */
+}
+
+/* Appliquer la police Montserrat Regular aux boutons */
+.btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    /* Regular */
+}
+
+.navbar {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar img {
+    width: 60px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.navbar-nav {
+    flex-grow: 1;
+    /* Permet d'occuper tout l'espace disponible */
+    justify-content: center;
+    /* Centre le menu */
+}
+
+.nav-link {
+    margin: 0 15px;
+    /* Ajoute un espace autour des éléments du menu */
+}
+
+#about .about-p {
+    position: relative;
+    top: 30px;
+    font-size: 1.2rem;
+}
+
+#about .btn-about {
+    background-color: #03476E;
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin: 0;
+    position: relative;
+    top: 30px;
+    border-radius: 100px;
+    padding: 13px 20px;
+    border: 2px solid #ffffff;
+}
+
+.service-card {
+    background-color: #014d6d;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    height: 100%;
+}
+
+.service-card h5 {
+    font-weight: bold;
+}
+
+.service-card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.service-card a {
+    color: #f1c40f;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.service-card a:hover {
+    text-decoration: underline;
+}
+
+.img-container {
+    background-color: #608BA3;
+    /* Couleur de fond */
+    padding: 15px;
+    /* Espace autour de l'image */
+    border-radius: 50%;
+    /* Pour rendre le fond arrondi */
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+#contact .img-container img {
+    width: 50px;
+    height: 50px;
+}
+
+
+
+.img-container img {
+    width: 50px;
+    height: 50px;
+}
+
+.statistique {
+    position: relative;
+    top: 60px;
+}
+
+.chiffre-cle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-avis {
+    background-color: #E7E7EB;
+    position: relative;
+    top: 80px;
+}
+
+.service-avis {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border-radius: 30px;
+    padding: 20px;
+    height: 100%;
+}
+
+h5 {
+    text-align: center;
+}
+
+.footer {
+    position: relative;
+    top: 80px;
+}

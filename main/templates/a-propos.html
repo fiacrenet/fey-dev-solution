@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fay Dev Solutions</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Poppins:wght@500&family=Montserrat:wght@400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    {% load static %}
+
+    <!-- Inclure le fichier CSS -->
+    <link rel="stylesheet" href="{% static 'assets/styles/style.css' %}">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+        <div class="container">
+            <img src="{% static 'assets/images/logo.png' %}" alt="Logo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{% url 'index' %}">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'apropos' %}">À Propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nos Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="apropos">
+        <div class="container">
+            <div class="row">
+                <!-- Colonne de texte -->
+                <div class="col-md-12 justify-content-center">
+                    <h2 class="a-propos">A propos</h2>
+                    <p>Home /A propos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-light">
+        <div class="container">
+            <div class="row about-p">
+                <div class="col-md-6">
+                    <img src="{% static 'assets/images/image4.png' %}" alt="Web design example" class="img-fluid">
+                </div>
+                <div class="col-md-6 d-flex align-items-center mt-4">
+                    <div>
+                        <h2 class="about-apropos" style="font-family: 'Montserrat', sans-serif; text-align: left">QUI
+                            SOMMES NOUS?</h2>
+                        <p>Fay Dev Solutions est une agence spécialisée dans le web, le SEO et la communication
+                            digitale. Notre équipe, passionnée par l'innovation numérique, place la satisfaction client
+                            au cœur de son action.</p>
+                        <p>Experts dans la conception de sites web personnalisés et dans l'élaboration de stratégies SEO
+                            efficaces, nous donnons vie à vos ambitions digitales. Chaque mission représente pour nous
+                            un défi unique.</p>
+                        <a href="#" class="btn btn-about">Nos services</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section-avis" style="background-color: #E7E7EB; padding: 50px 0;">
+        <div>
+            <div class="container text-center">
+                <!-- Paragraphe avec titre -->
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <p style="font-size: 1.2rem;text-align: left;">
+                            Vous rêvez d'une présence en ligne forte et efficace ? Notre agence transforme votre vision
+                            en réalité.
+                            Nous concevons
+                            des sites web sur mesure, adaptés à vos besoins spécifiques et à votre image de marque. Du
+                            site vitrine
+                            au e-commerce
+                            complexe, nous maîtrisons toutes les technologies (Prestashop, Drupal, Joomla...) pour vous
+                            offrir un
+                            outil performant
+                            et facile à gérer. Notre expertise en design, développement et référencement naturel vous
+                            garantit un
+                            retour sur
+                            investissement optimal. Prêt à booster votre activité ? Contactez-nous !.
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- Cartes des services avec une décalée -->
+                <div class="row justify-content-center mt-5">
+                    <h2 class="about-apropos" style="font-family: 'Montserrat', sans-serif">NOS PARTENAIRES </h2>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer" style="background-color: #014d6d; color: white;   padding: 50px 0;">
+        <div class="container" style="position: relative; top: 30px;">
+            <div class="row">
+                <div class="col-md-3">
+                    <div>
+                        <img class="footer-logo" style="width:90px; height: 80px;"
+                            src="{% static 'assets/images/logo.png' %}" alt="Image centrée" class="img-fluid">
+                        <p class="mt-3">Agence spécialisée dans la création et le référencement de sites web et
+                            d’applications mobiles.</p>
+                    </div>
+                </div>
+                <style>
+                    .footer-logo {
+                        background-color: white;
+                        width: 90px;
+                        height: 80px;
+                        padding: 10px;
+                        border-radius: 48px;
+                    }
+                </style>
+                <div class="col-md-3" style="position: relative; top: 30px;">
+                    <h4>Nos Services</h4>
+                    <ul class="list-unstyled p-3 mt-3">
+                        <li>Création de sites web</li>
+                        <li>Référencement (SEO)</li>
+                        <li>Création d'applications web</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3" style="position: relative; top: 30px;">
+                    <h4>Contact</h4>
+                    <div class="p-3 mt-3">
+                        <ul class="list-unstyled">
+                            <li><img src="{% static 'assets/images/phone.png' %}" alt="Phone icon"> Téléphone</li>
+                            <li><img src="{% static 'assets/images/email.png' %}" alt="Email icon"> Email</li>
+                            <li><img src="{% static 'assets/images/address.png' %}" alt="Location icon"> Adresse</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: right; margin-top: 10px; margin-right: 20px;">
+            <a href="" style="color: white; margin-right: 15px;">Mention légale</a>
+            <a href="" style="color: white;">Politique de sécurité</a>
+        </div>
+
+    </section>
+
+    <script>
+        // Fonction pour incrémenter les chiffres avec un "+" devant
+        function animateCounter(el, target) {
+            let count = 0;
+            const increment = target / 200; // Ajuster ce chiffre pour changer la vitesse
+            const updateCount = () => {
+                count += increment;
+                if (count < target) {
+                    el.innerText = '+' + Math.ceil(count);
+                    requestAnimationFrame(updateCount);
+                } else {
+                    el.innerText = '+' + target;
+                }
+            };
+            updateCount();
+        }
+
+        // Initialiser l'animation sur les éléments avec la classe 'chiffre-cle'
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.chiffre-cle').forEach(el => {
+                const target = parseInt(el.getAttribute('data-target'));
+                animateCounter(el, target);
+            });
+        }); document.addEventListener('DOMContentLoaded', function () {
+            var cocoenElements = document.querySelectorAll('.cocoen');
+            cocoenElements.forEach(function (el) {
+                new Cocoen(el);
+            });
+        });
+
+
+    </script>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
