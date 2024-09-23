@@ -58,8 +58,9 @@
                     <h2 class="py-2">AGENCE WEB ET SEO</h2>
                     <p>Maximisez votre impact digital avec nos solutions web innovantes et un SEO qui génère des
                         résultats concrets.</p>
-                    <a href="#" class="btn btn-service btn-custom">Nos services</a>
-                    <a href="#" class="btn btn-contact btn-outline-light">Nous contacter</a>
+                    <a href="#services" class="btn btn-service btn-custom"
+                        style="background-color: #f6b42e; text-decoration: #014d6d;">Nos services</a>
+                    <a href="{% url 'contact' %}" class="btn btn-contact btn-outline-light">Nous contacter</a>
                 </div>
                 <!-- Colonne d'image -->
                 <div class="col-md-6">
@@ -87,7 +88,7 @@
                         <p>Experts dans la conception de sites web personnalisés et dans l'élaboration de stratégies SEO
                             efficaces, nous donnons vie à vos ambitions digitales. Chaque mission représente pour nous
                             un défi unique.</p>
-                        <a href="#" class="btn btn-about">Nos services</a>
+                        <a href="#services" class="btn btn-about">Nos services</a>
                     </div>
                 </div>
             </div>
@@ -108,9 +109,9 @@
                             style="text-align: left;font-size: 1.8rem; margin: 20px; font-family: 'Montserrat', sans-serif;">
                             Création de sites web
                         </h5>
-                        <p>Garantissez la protection de votre site avec notre service de maintenance, qui veille à des
-                            mises à jour
-                            régulières et une sécurité optimale pour un fonctionnement fluide et sans interruption.</p>
+                        <p>Donnez vie à votre projet digital avec EcomDev : des sites web personnalisés, alliant
+                            esthétique et technologies
+                            avancées pour une expérience en ligne fluide et captivante.</p>
                         <a href="#">En Savoir Plus</a>
                     </div>
                 </div>
@@ -123,9 +124,9 @@
                             style="text-align: left;font-size: 1.8rem; margin: 20px; font-family: 'Montserrat', sans-serif;">
                             Référencement (SEO)
                         </h5>
-                        <p>Garantissez la protection de votre site avec notre service de maintenance, qui veille à des
-                            mises à jour
-                            régulières et une sécurité optimale pour un fonctionnement fluide et sans interruption.</p>
+                        <p>Boostez votre visibilité en ligne grâce à notre expertise en SEO, alliant stratégies
+                            performantes et analyses
+                            approfondies pour attirer un trafic ciblé.</p>
                         <a href="#">En Savoir Plus</a>
                     </div>
                 </div>
@@ -137,9 +138,9 @@
                         <h5
                             style="text-align: left;font-size: 1.8rem; margin: 20px;   font-family: 'Montserrat', sans-serif; ">
                             Maintenance</h5>
-                        <p>Garantissez la protection de votre site avec notre service de maintenance, qui veille à des
-                            mises à jour
-                            régulières et une sécurité optimale pour un fonctionnement fluide et sans interruption.</p>
+                        <p>Assurez le bon fonctionnement de votre site avec notre service de maintenance, garantissant
+                            mises à jour régulières et
+                            surveillance proactive pour une performance optimale.</p>
                         <a href="#">En Savoir Plus</a>
                     </div>
                 </div>
@@ -285,13 +286,6 @@
                 <div class="row justify-content-center">
                     <div class="col-md-8">
                         <h2 class="py-4" style="font-family: 'Montserrat', sans-serif">CE QUE DISENT NOS CLIENTS</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae
-                            vestibulum
-                            vestibulum.
-                            Cras venenatis euismod malesuada. Integer commodo ligula et velit volutpat, sed aliquam urna
-                            vehicula.
-                        </p>
                     </div>
                 </div>
 
@@ -314,10 +308,12 @@
                                 <img src="{% static 'assets/images/avis.webp' %}" alt="Maintenance"
                                     class="img-fluid d-block mx-auto">
                             </div>
-                            <p>Garantissez la protection de votre site avec notre service de maintenance, qui veille à
-                                des
-                                mises à jour régulières et une sécurité optimale pour un fonctionnement fluide et sans
-                                interruption.
+                            <p>Grâce à Fay dev soltion, notre site web a connu un véritable coup de boost ! Le design
+                                est
+                                moderne et épuré, et les
+                                fonctionnalités sont exactement ce dont nous avions besoin. L’équipe a été attentive à
+                                nos besoins et a toujours su
+                                répondre rapidement à nos questions. Nous sommes ravis des résultats !
                             </p>
                             <h5>Julie Brun</h5>
                         </div>
@@ -332,12 +328,13 @@
                                 <img src="{% static 'assets/images/avis.webp' %}" alt="Maintenance"
                                     class="img-fluid d-block mx-auto">
                             </div>
-                            <p>Garantissez la protection de votre site avec notre service de maintenance, qui veille à
-                                des
-                                mises à jour régulières et une sécurité optimale pour un fonctionnement fluide et sans
-                                interruption.
+                            <p>Je recommande vivement EcomDev pour leur service de référencement. Depuis qu'ils
+                                s'occupent de notre SEO, notre trafic a
+                                considérablement augmenté. Ils ont une approche personnalisée et nous ont guidés à
+                                chaque étape. Un vrai partenaire de
+                                confiance pour notre croissance en ligne !
                             </p>
-                            <h5>Julie Brun</h5>
+                            <h5>Julien Martin</h5>
                         </div>
                     </div>
 
@@ -350,12 +347,13 @@
                                 <img src="{% static 'assets/images/avis.webp' %}" alt="Maintenance"
                                     class="img-fluid d-block mx-auto">
                             </div>
-                            <p>Garantissez la protection de votre site avec notre service de maintenance, qui veille à
-                                des
-                                mises à jour régulières et une sécurité optimale pour un fonctionnement fluide et sans
-                                interruption.
+                            <p>La maintenance de notre site est entre de bonnes mains avec EcomDev. Ils assurent des
+                                mises à jour régulières et sont
+                                toujours disponibles en cas de besoin. Grâce à leur réactivité, nous avons évité
+                                plusieurs problèmes techniques. Leur
+                                professionnalisme fait toute la différence !
                             </p>
-                            <h5>Julie Brun</h5>
+                            <h5>Sophie Leroy</h5>
                         </div>
                     </div>
                 </div>
