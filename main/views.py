@@ -28,4 +28,5 @@ def contact(request):
 def creationSiteWeb(request): 
     return render(request, 'creation-de-site-web.html')
 
-    
+def referencement(request):
+    return render(request, 'referencement.html')   
