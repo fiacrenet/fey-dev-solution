@@ -24,3 +24,8 @@ def contact(request):
             messages.error(request, 'Veuillez remplir tous les champs.')  # Message d'erreur si champs manquants
     
     return render(request, 'contact.html')  # Affiche le formulaire
+
+def creationSiteWeb(request): 
+    return render(request, 'creation-de-site-web.html')
+
+    
