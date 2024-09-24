@@ -48,8 +48,32 @@
             font-size: 0.9rem;
         }
 
-        .btn-custom:hover {
-            background-color: var(--background-color);
+        .icon-container img {
+            height: 50px;
+            margin: 30px;
+        }
+
+        .bg-light-blue {
+            background-color: #e9f4ff;
+        }
+
+        .btn-primary-custom {
+            background-color: #03476E;
+            color: white;
+        }
+
+        .section-header {
+            color: #03476E;
+            font-weight: bold;
+        }
+
+        .info-box {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        h5 {
+            font-family: 'Montserrat', sans-serif
         }
     </style>
 </head>
@@ -95,8 +119,6 @@
             </div>
         </div>
     </nav>
-
-
     <!-- Hero Section -->
     <section id="apropos">
         <div class="container"></div>
@@ -152,84 +174,75 @@
         </div>
     </section>
 
-
-    <section class="container my-5">
-        <h2 class="text-center mb-5" style="font-family: 'Montserrat', sans-serif;"">OPTEZ POUR UN <span
-                style=" color: #03476E; font-family: 'Montserrat' , sans-serif;">SITE WEB</span></h2>
-        <div class="row text-center">
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow border-0">
-                    <div class="card-body">
-                        <div class="mb-3">
-                            <img src="{% static 'assets/images/settings.png' %}" alt="Unique icon" />
-                        </div>
-                        <h5 class="card-title">Unique</h5>
-                        <p class="card-text">Un site web unique et sur mesure, mêlant beauté visuelle et navigation
-                            sans effort pour charmer vos visiteurs et établir une confiance dès le premier regard.</p>
+    <section class="py-5">
+        <div class="container text-center">
+            <div class="row mb-4">
+                <div class="col-md-4 card h-100 shadow border-0">
+                    <div class="icon-container">
+                        <img src="{% static 'assets/images/rechercher-sur-le-web.webp' %}" alt="Audit SEO Complet">
                     </div>
+                    <h5>Audit SEO Complet</h5>
                 </div>
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow border-0">
-                    <div class="card-body">
-                        <div class="mb-3">
-                            <img src="{% static 'assets/images/page-reactive.png' %}" alt="Responsive icon" />
-                        </div>
-                        <h5 class="card-title">Responsive</h5>
-                        <p class="card-text">Un site conçu pour tous les appareils, offrant une expérience utilisateur
-                            fluide et homogène sur mobile, tablette et ordinateur.</p>
+                <div class="col-md-4 card h-100 shadow border-0">
+                    <div class="icon-container">
+                        <img src="{% static 'assets/images/optimisation.webp' %}" alt="Optimisation On-Page">
                     </div>
+                    <h5>Optimisation On-Page</h5>
+                </div>
+                <div class="col-md-4 card h-100 shadow border-0">
+                    <div class="icon-container">
+                        <img src="{% static 'assets/images/seo.webp' %}" alt="Création de Contenu SEO">
+                    </div>
+                    <h5>Création de Contenu SEO</h5>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="container my-5">
-        <div class="row">
-            <!-- Première Carte -->
-            <div class="col-md-6 mb-4">
-                <div class="card-custom border-0">
-                    <h5 class="card-title-custom">Site Vitrine</h5>
-                    <p class="card-text mt-3">
-                        Un site web de présentation est un outil indispensable pour toute entreprise souhaitant
-                        promouvoir
-                        son activité et ses services en ligne. L'objectif de notre service de création de sites vitrines
-                        est
-                        de satisfaire les besoins spécifiques de chaque client, peu importe leur domaine d’activité.
-                        Grâce à
-                        notre collaboration, vous profiterez d'une solution web personnalisée qui vous permettra de vous
-                        démarquer dans votre domaine d’activité et d’atteindre vos objectifs commerciaux. Notre objectif
-                        est
-                        de concevoir un site web sur mesure qui reflète votre marque et attire votre audience cible.
-                        Nous
-                        créons des projets.
-                    </p>
-                    <a href="#" class="btn btn-custom">Devis Gratuit</a>
+    <section class="py-5  text-center">
+        <div class="container">
+            <h2 class="section-header" style="font-family: 'Montserrat', sans-serif">Meilleure agence de référencement
+                SEO</h2>
+            <p class="mb-5">Notre agence de référencement SEO, reconnue comme l'une des meilleures du secteur,offre
+                des
+                solutions personnalisées pour améliorer <br>la visibilité et le classement de votre site web sur les
+                moteurs
+                de recherche.</p>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="info-box">
+                        <span style="font-family: 'Montserrat', sans-serif" class="d-block">+15 ans</span>
+                        <small style="font-family: 'Montserrat', sans-serif">d'expérience</small>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="info-box">
+                        <span style="font-family: 'Montserrat', sans-serif" class="d-block">+300</span>
+                        <small style="font-family: 'Montserrat', sans-serif">projets réalisés</small>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card-body info-box">
+                        <span class="d-block" style="font-family: 'Montserrat', sans-serif">+180</span>
+                        <small style="font-family: 'Montserrat', sans-serif">Sites en 1ère page</small>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="info-box">
+                        <span class="d-block" style="font-family: 'Montserrat', sans-serif">12</span>
+                        <small style="font-family: 'Montserrat', sans-serif">Certifications</small>
+                    </div>
                 </div>
             </div>
 
-            <!-- Deuxième Carte -->
-            <div class="col-md-6 mb-4">
-                <div class="card-custom border-0">
-                    <h5 class="card-title-custom">Site E-Commerce</h5>
-                    <p class="card-text mt-3">
-                        Un site de vente en ligne est un moyen en ligne pour les entreprises de commercialiser leurs
-                        produits ou services directement auprès des consommateurs. Notre domaine d’expertise consiste à
-                        concevoir des sites e-commerce personnalisés pour les entrepreneurs et les entreprises qui
-                        désirent
-                        élargir leur visibilité en ligne et toucher un public plus vaste. Que ce soit pour la vente de
-                        produits en magasin, de services en ligne ou même d’abonnements, nous créons des sites de
-                        commerce
-                        électronique sur mesure qui garantissent une expérience d’achat fluide et sécurisée. Nous
-                        développons des :
-                    </p>
-                    <a href="#" class="btn btn-custom">Devis Gratuit</a>
-                </div>
+            <div class="mt-5">
+                <a href="#" class="btn btn-primary-custom" style="background-color: #03476E; color: white;">Demander un
+                    Devis
+                    Gratuit</a>
             </div>
         </div>
     </section>
-
 
     <section class="footer" style="background-color: #014d6d; color: white;   padding: 50px 0;">
         <div class="container" style="position: relative; top: 30px;">
