@@ -82,7 +82,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
         <div class="container">
-            <img src="{% static 'assets/images/logo.png' %}" alt="Logo">
+            <a href="{% url 'index' %}"><img src="{% static 'assets/images/logo.png' %}" alt="Logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -105,13 +105,9 @@
                         <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
                             <li><a class="dropdown-item" href="{% url 'creationSiteWeb' %}">Création de site web</a>
                             </li>
-                            <li><a class="dropdown-item" href="{% url 'referencement' %}">Référencement SEO</a>
-                            </li>
-
-
+                            <li><a class="dropdown-item" href="{% url 'referencement' %}">Référencement SEO</a></li>
+                            <li><a class="dropdown-item" href="{% url 'maintenance' %}">Maintenance</li>
                         </ul>
-                    </li>
-
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'contact' %}">Contact</a>
                     </li>
@@ -159,7 +155,7 @@
                             stratégie de référencement efficace, adaptée à vos objectifs, afin de garantir des résultats
                             durables et mesurables.
                             Ensemble, faisons passer votre présence en ligne à un tout autre niveau.</p>
-                        <a href="#" class="btn btn-about">Nos services</a>
+                        <a href="{% url 'contact' %}" class="btn btn-about">Contactez-nous</a>
                     </div>
                 </div>
 
@@ -237,7 +233,8 @@
             </div>
 
             <div class="mt-5">
-                <a href="#" class="btn btn-primary-custom" style="background-color: #03476E; color: white;">Demander un
+                <a href="{% url 'contact' %}" class="btn btn-primary-custom"
+                    style="background-color: #03476E; color: white;">Demander un
                     Devis
                     Gratuit</a>
             </div>
@@ -272,7 +269,6 @@
                         <li>Création d'applications web</li>
                     </ul>
                 </div>
-
                 <div class="col-md-3" style="position: relative; top: 30px;">
                     <h4>Contact</h4>
                     <div class="p-3 mt-3">

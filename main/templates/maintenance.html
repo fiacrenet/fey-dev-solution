@@ -18,10 +18,86 @@
 
     <!-- Inclure le fichier CSS -->
     <link rel="stylesheet" href="{% static 'assets/styles/style.css' %}">
+    <style>
+        :root {
+            --background-color: #03476E;
+        }
+
+        .card-custom {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .card-title-custom {
+            background-color: var(--background-color);
+            color: white;
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 1.1rem;
+        }
+
+        .btn-custom {
+            background-color: var(--background-color);
+            color: white;
+            border-radius: 30px;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .icon-container img {
+            height: 50px;
+            margin: 30px;
+        }
+
+        .bg-light-blue {
+            background-color: #e9f4ff;
+        }
+
+        .btn-primary-custom {
+            background-color: #03476E;
+            color: white;
+        }
+
+        .section-header {
+            color: #03476E;
+            font-weight: bold;
+        }
+
+        .info-box {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        h5 {
+            font-family: 'Montserrat', sans-serif
+        }
+
+
+
+        /* Section contenant l'image */
+        .image-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        /* Style de l'image */
+        .centered-image {
+            max-width: 80%;
+            max-height: 80%;
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
 </head>
 
 <body>
-    <!-- Navbar -->
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
         <div class="container">
             <a href="{% url 'index' %}"><img src="{% static 'assets/images/logo.png' %}" alt="Logo"></a>
@@ -57,75 +133,89 @@
             </div>
         </div>
     </nav>
-
     <!-- Hero Section -->
     <section id="apropos">
-        <div class="container">
-            <div class="row">
-                <!-- Colonne de texte -->
-                <div class="col-md-12 justify-content-center">
-                    <h2 class="a-propos">A propos</h2>
-                    <p>Home /A propos</p>
-                </div>
+        <div class="container"></div>
+        <div class="row">
+            <!-- Colonne de texte -->
+            <div class="col-md-12 justify-content-center">
+                <h2 class="a-propos">Maintenance de votre site web</h2>
+                <p>Home /Maintenance</p>
             </div>
         </div>
+        </div>
     </section>
+
+    <section class="text-center">
+        <div class="container">
+            <h2 class="section-header mt-5" style="font-family: 'Montserrat', sans-serif">Confiez-nous la maintenace de
+                votre
+                site pour une tranquilité d'esprit total.
+            </h2>
+            <p class="container mb-5 text-center mx-auto" style="max-width: 900px;">
+                Votre site web est le cœur de votre présence en ligne. Une maintenance régulière est essentielle pour
+                garantir sa
+                sécurité, ses performances et une expérience utilisateur fluide. Chez [Nom de votre entreprise], nous
+                assurons que
+                votre site reste toujours en ligne, rapide, et protégé.
+            </p>
+        </div>
+    </section>
+
+    <div class="image-section">
+        <img src="{% static 'assets/images/images_pg-service-it_maintenance-outils.webp' %}" alt="Grande Image"
+            class="centered-image">
+    </div>
+    <div class="mt-5 d-flex justify-content-center py-3">
+        <a href="{% url 'contact' %}" class="btn btn-primary-custom" style="background-color: #03476E; color: white;">
+            Demander un Devis Gratuit
+        </a>
+    </div>
+
 
     <!-- About Section -->
     <section id="about" class="bg-light">
         <div class="container">
             <div class="row about-p">
-                <div class="col-md-6">
-                    <img src="{% static 'assets/images/image4.png' %}" alt="Web design example" class="img-fluid">
-                </div>
-                <div class="col-md-6 d-flex align-items-center mt-4">
+                <!-- Texte à gauche -->
+                <div class="col-md-6 d-flex align-items-center mt-4 order-md-1">
                     <div>
-                        <h2 class="about-apropos" style="font-family: 'Montserrat', sans-serif; text-align: left">QUI
-                            SOMMES NOUS?</h2>
-                        <p>Fay Dev Solutions est une agence spécialisée dans le web, le SEO et la communication
-                            digitale. Notre équipe, passionnée par l'innovation numérique, place la satisfaction client
-                            au cœur de son action.</p>
-                        <p>Experts dans la conception de sites web personnalisés et dans l'élaboration de stratégies SEO
-                            efficaces, nous donnons vie à vos ambitions digitales. Chaque mission représente pour nous
-                            un défi unique.</p>
-                        <a href="#" class="btn btn-about">Nos services</a>
+                        <h2 class="about-apropos" style="font-family: 'Montserrat', sans-serif;text-align: left">
+                            Contrat de maintenance illimité
+                        </h2>
+                        <p>Vous êtes une entreprise B2B à la recherche d'un partenaire fiable pour assurer la
+                            maintenance et l’optimisation
+                            continue de votre site web ? Confiez cette mission à notre agence spécialisée. Nous vous
+                            garantissons un suivi constant
+                            et un site performant en toutes circonstances.
+
+                            Optez pour une solution de maintenance complète, conçue pour maximiser votre visibilité en
+                            ligne et générer davantage de
+                            contacts qualifiés.
+
+                            Choisissez le forfait adapté à vos besoins et à votre budget. Tous nos contrats sont
+                            flexibles, tout compris, et sans
+                            restriction de temps ou de nombre d'interventions.
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+                <div class="col-md-6 d-flex align-items-center mt-4 order-md-1">
+                    <div>
 
+                        <p>Créer un site web n’est que le début. Forts de notre expérience, nous savons que la véritable
+                            valeur réside dans la
+                            gestion et l’optimisation continue de votre site, bien au-delà de sa conception initiale. Un
+                            site web efficace doit
+                            évoluer pour capter l’attention des visiteurs et les convertir en prospects qualifiés ou
+                            clients fidèles.
 
-    <section class="section-avis" style="background-color: #E7E7EB; padding: 50px 0;">
-        <div>
-            <div class="container text-center">
-                <!-- Paragraphe avec titre -->
-                <div class="row justify-content-center">
-                    <div class="col-md-8">
-                        <p style="font-size: 1.2rem;text-align: left;">
-                            Vous rêvez d'une présence en ligne forte et efficace ? Notre agence transforme votre vision
-                            en réalité.
-                            Nous concevons
-                            des sites web sur mesure, adaptés à vos besoins spécifiques et à votre image de marque. Du
-                            site vitrine
-                            au e-commerce
-                            complexe, nous maîtrisons toutes les technologies (Prestashop, Drupal, Joomla...) pour vous
-                            offrir un
-                            outil performant
-                            et facile à gérer. Notre expertise en design, développement et référencement naturel vous
-                            garantit un
-                            retour sur
-                            investissement optimal. Prêt à booster votre activité ? Contactez-nous !.
-                        </p>
-
+                            Notre équipe d’experts prend en charge la maintenance pour garantir un fonctionnement
+                            optimal de votre site au
+                            quotidien. Avec Pulsar Agency, vous assurez la pérennité et la rentabilité de vos solutions
+                            digitales.</p>
+                        <a href="{% url 'contact' %}" class="btn btn-about">Contactez-nous</a>
                     </div>
                 </div>
 
-                <!-- Cartes des services avec une décalée -->
-                <div class="row justify-content-center mt-5">
-                    <h2 class="about-apropos" style="font-family: 'Montserrat', sans-serif">NOS PARTENAIRES </h2>
-
-                </div>
             </div>
         </div>
     </section>
@@ -158,7 +248,6 @@
                         <li>Création d'applications web</li>
                     </ul>
                 </div>
-
                 <div class="col-md-3" style="position: relative; top: 30px;">
                     <h4>Contact</h4>
                     <div class="p-3 mt-3">
@@ -177,6 +266,8 @@
         </div>
 
     </section>
+
+
 
     <script>
         // Fonction pour incrémenter les chiffres avec un "+" devant

@@ -29,4 +29,7 @@ def creationSiteWeb(request):
     return render(request, 'creation-de-site-web.html')
 
 def referencement(request):
-    return render(request, 'referencement.html')   
+    return render(request, 'referencement.html')  
+
+def maintenance(request):
+    return render(request, 'maintenance.html')    
